@@ -1,0 +1,1 @@
+0 1 * * * /usr/bin/php /berw/homes1/d/dec21/public_html/cs22220/includes/cron.php >/dev/null 2>&1

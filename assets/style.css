@@ -1,0 +1,319 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #3099ff;
+}
+
+
+header {
+    background-color: #ffffff;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: #000000;
+    border: 1px solid black;
+    margin-bottom: 5px;
+}
+
+main{
+    background-color: #ffffff;
+    padding: 30px;
+    text-align: left;
+    font-size: 15px;
+    color: #000000;
+    border: 1px solid black;
+    margin-bottom: 5px;
+}
+
+footer {
+    background-color: #f2f2f2;
+    padding-left: 20px;
+    text-align: center;
+    font-size: 15px;
+    color: #000000;
+    border: 1px solid black;
+    margin-bottom: 5px;
+}
+
+#login {
+    text-align: center;
+    margin: auto;
+    font-size: 150%;
+}
+
+.selectMenu {
+    min-width: 700px;
+    width: 50%;
+    padding: 10px 10px;
+    margin: 5px 0px 5px 0px;
+    box-sizing: content-box;
+    border: 2px solid black;
+
+    font-size: 13px;
+    font-weight: bold;
+    text-align: left;
+    font-family: sans-serif;
+}
+
+/* Enclosing the form to make is visually obvious for the user*/
+form, .enclosure {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 0px solid black;
+}
+
+/* Positioning the Title */
+h1 {
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+    font-family: sans-serif;
+    text-decoration: underline;
+}
+
+h2{
+    margin: 5px 0px 15px 0;
+    font-size: 25px;
+    text-align: left;
+    font-family: sans-serif;
+    text-decoration: underline;
+}
+
+h3 {
+    margin: 5px 0px 5px 0;
+    font-size: 15px;
+    text-align: left;
+    font-family: sans-serif;
+}
+
+/* Sizing, spacing, and styling each input box */
+input {
+    /*min-width: 700px;*/
+    width: 75%;
+    padding: 10px 10px;
+    margin: 5px 0px 5px 0px;
+    box-sizing: content-box;
+    border: 2px solid black;
+
+    font-size: 13px;
+    text-align: left;
+    font-family: sans-serif;
+}
+
+/* Colouring the submit button to make it stand out */
+input[type=submit] {
+    background-color: greenyellow;
+}
+
+.error {
+    background-color: red;
+    /*min-width: 700px;*/
+    width: 50%;
+    padding: 10px 10px;
+    margin: 5px 0px 5px 0px;
+    box-sizing: content-box;
+    border: 2px solid black;
+
+    font-size: 13px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.success {
+    background-color: green;
+    /*min-width: 700px;*/
+    width: 50%;
+    padding: 10px 10px;
+    margin: 5px 0px 5px 0px;
+    box-sizing: content-box;
+    border: 2px solid black;
+
+    font-size: 13px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 1000px;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+
+.nav {
+    width: 100%;
+    height: 46px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    overflow: hidden;
+    padding: 2px;
+
+}
+
+.nav a, .dropdownTitle {
+    display: block;
+    float: left;
+
+    font-family: sans-serif;
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+
+    background-color: #1e90ff;
+    border: 1px solid #000;
+    padding: 9px;
+    width: 100px;
+}
+
+.dropdownBtn {
+    font-family: sans-serif;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+
+    background-color: #1e90ff;
+    border: 1px solid #000;
+    padding: 9px;
+    width: 100px;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1e90ff;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+
+    font-family: sans-serif;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+
+    background-color: #1e90ff;
+    border: 1px solid #000;
+    width: 202px;
+
+
+}
+
+.dropdown-content a {
+    float: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+    font-family: sans-serif;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+
+    background-color: #1e90ff;
+    border: 1px solid #000;
+    width: 200px;
+}
+
+.dropdown-content a:hover, .nav a:hover, .dropdownBtn:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+#account{
+    display: block;
+    float: right;
+
+    width: 150px;
+}
+
+/* Customize the label (the container) */
+.checkboxContainer {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkboxContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #dddddd;
+}
+
+/* On mouse-over, add a grey background color */
+.checkboxContainer:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkboxContainer input:checked ~ .checkmark {
+    background-color: #1e90ff;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checkboxContainer input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkboxContainer .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
